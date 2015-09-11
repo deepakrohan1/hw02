@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="10dp">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSelectContact"
+        android:id="@+id/buttonSelectContact" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editDeleteName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/editEnterName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editDeletePhone"
+        android:layout_below="@+id/editEnterName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/editEnterPhone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editDeleteEmail"
+        android:layout_below="@+id/editEnterPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/editEnterEmail" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonDelete"
+        android:clickable="true"
+        android:src="@drawable/default1"
+        android:layout_below="@+id/editEnterEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSave"
+            android:id="@+id/buttonDeleteSave"
+            android:layout_below="@+id/imageButtonContactImage"
+            android:layout_alignLeft="@+id/imageButtonContactImage"
+            android:layout_alignStart="@+id/imageButtonContactImage"
+            android:layout_weight="0.50"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonCancel"
+            android:id="@+id/buttonDeleteCancel"
+            android:layout_alignBottom="@+id/buttonSaveContact"
+            android:layout_alignRight="@+id/imageButtonContactImage"
+            android:layout_weight="0.50"
+            android:layout_alignEnd="@+id/imageButtonContactImage"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
 </LinearLayout>

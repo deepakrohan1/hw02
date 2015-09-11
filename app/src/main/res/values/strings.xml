@@ -34,5 +34,8 @@
 
     //Disp Contact
     <string name="display_contacts">Display Contacts</string>
+    <string name="display_Name">Johne Smith</string>
+    <string name="display_Phone">111 222 3333</string>
+    <string name="display_Email">johne@uncc.edu</string>
 
 </resources>

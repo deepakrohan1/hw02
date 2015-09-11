@@ -51,7 +51,10 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageButtonContactImage"
+        android:gravity="center"
+        android:weightSum="1">
 
         <Button
             android:layout_width="wrap_content"
@@ -60,7 +63,9 @@
             android:id="@+id/buttonSaveContact"
             android:layout_below="@+id/imageButtonContactImage"
             android:layout_alignLeft="@+id/imageButtonContactImage"
-            android:layout_alignStart="@+id/imageButtonContactImage" />
+            android:layout_alignStart="@+id/imageButtonContactImage"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical" />
 
         <Button
             android:layout_width="wrap_content"
@@ -69,7 +74,9 @@
             android:id="@+id/buttonCancelConact"
             android:layout_alignBottom="@+id/buttonSaveContact"
             android:layout_alignRight="@+id/imageButtonContactImage"
-            android:layout_alignEnd="@+id/imageButtonContactImage" />
+            android:layout_alignEnd="@+id/imageButtonContactImage"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical" />
     </LinearLayout>
 
 </RelativeLayout>

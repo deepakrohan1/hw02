@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Contacts Directory</string>
+    <string name="action_settings">Settings</string>
+
+    //in Main
+    <string name="buttonCreateContact">Create Contact</string>
+    <string name="buttonEditContact">Edit Contact</string>
+    <string name="buttonDeleteContact">Delete Contact</string>
+    <string name="buttonDisplayContacts">Display Contacts</string>
+    <string name="buttonFinish">Finish</string>
+    <string name="title_activity_create_contact">CreateContact</string>
+
+    //in CreateContact
+    <string name="editEnterName">Name</string>
+    <string name="create_contact">Create Contact</string>
+    <string name="editEnterPhone">Phone Number</string>
+    <string name="editEnterEmail">Email</string>
+    <string name="buttonSave">Save</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="title_activity_edit_contact">EditContact</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_delete_contact">DeleteContact</string>
+    <string name="title_activity_display_contacts">DisplayContacts</string>
+
+    //in edit_contacts
+    <string name="edit_contacts">Edit Contacts</string>
+    <string name="buttonSelectContact">Select Contact</string>
+
+
+
+    //Del Contact
+    <string name="delete_contact">Delete Contact</string>
+
+    //Disp Contact
+    <string name="display_contacts">Display Contacts</string>
+
+</resources>

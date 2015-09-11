@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.todd.group4c_hw02.CreateContact">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editEnterName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/editEnterName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editEnterPhone"
+        android:layout_below="@+id/editEnterName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/editEnterPhone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editEnterEmail"
+        android:layout_below="@+id/editEnterPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/editEnterEmail" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonContactImage"
+        android:clickable="true"
+        android:src="@drawable/default1"
+        android:layout_below="@+id/editEnterEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSave"
+            android:id="@+id/buttonSaveContact"
+            android:layout_below="@+id/imageButtonContactImage"
+            android:layout_alignLeft="@+id/imageButtonContactImage"
+            android:layout_alignStart="@+id/imageButtonContactImage" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonCancel"
+            android:id="@+id/buttonCancelConact"
+            android:layout_alignBottom="@+id/buttonSaveContact"
+            android:layout_alignRight="@+id/imageButtonContactImage"
+            android:layout_alignEnd="@+id/imageButtonContactImage" />
+    </LinearLayout>
+
+</RelativeLayout>

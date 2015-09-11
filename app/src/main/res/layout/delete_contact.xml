@@ -19,6 +19,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:hint="@string/editEnterName" />
+    <!--Comment -->
 
     <EditText
         android:layout_width="match_parent"
@@ -66,7 +67,7 @@
             android:layout_below="@+id/imageButtonContactImage"
             android:layout_alignLeft="@+id/imageButtonContactImage"
             android:layout_alignStart="@+id/imageButtonContactImage"
-            android:layout_weight="0.50"
+            android:layout_weight="0.10"
             android:layout_gravity="center_vertical" />
 
         <Button
@@ -76,7 +77,7 @@
             android:id="@+id/buttonDeleteCancel"
             android:layout_alignBottom="@+id/buttonSaveContact"
             android:layout_alignRight="@+id/imageButtonContactImage"
-            android:layout_weight="0.50"
+            android:layout_weight="0.10"
             android:layout_alignEnd="@+id/imageButtonContactImage"
             android:layout_gravity="center_vertical" />
     </LinearLayout>

@@ -1,5 +1,12 @@
 package com.example.todd.group4c_hw02;
 
+/**
+ * Team: 4C
+ * Assignment: HW02
+ * Filename: Contact.java
+ * @author: Todd McCorkle, Deepak Rohan Sekar, Lori Quievryn
+ */
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;

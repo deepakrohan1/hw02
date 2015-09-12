@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    * Team: 4C
+    * Assignment: HW02
+    * Filename: display_contacts.xml
+    * @author: Todd McCorkle, Deepak Rohan Sekar, Lori Quievryn
+ -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,8 +40,8 @@
         android:padding="10dp"/>
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="118dp"
+        android:layout_height="108dp"
         android:id="@+id/imageButtonDisplay"
         android:clickable="true"
         android:src="@drawable/default1"
@@ -46,8 +53,11 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        android:layout_height="72dp"
+
+        android:gravity="bottom"
+
+        >
 
         <ImageButton
             android:layout_width="wrap_content"

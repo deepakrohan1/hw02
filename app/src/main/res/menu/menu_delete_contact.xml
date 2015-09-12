@@ -1,3 +1,10 @@
+<!--
+    * Team: 4C
+    * Assignment: HW02
+    * Filename: menu_delete_contact.xml
+    * @author: Todd McCorkle, Deepak Rohan Sekar, Lori Quievryn
+ -->
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

@@ -1,5 +1,6 @@
 package com.example.todd.group4c_hw02;
 
+<<<<<<< HEAD
 /**
  * Team: 4C
  * Assignment: HW02
@@ -8,17 +9,63 @@ package com.example.todd.group4c_hw02;
  */
 
 import android.graphics.drawable.Drawable;
+=======
+import android.content.Intent;
+import android.net.Uri;
+>>>>>>> origin/master
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class DisplayContacts extends AppCompatActivity {
+
+    TextView textViewEmail;
+    TextView textViewName;
+    TextView textViewPhone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_contacts);
+
+        textViewEmail = (TextView)findViewById(R.id.textDisplayEmail);
+        textViewName = (TextView)findViewById(R.id.textDisplayName);
+        textViewPhone = (TextView)findViewById(R.id.textDisplayPhone);
+
+        textViewEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String emailAddress = "deepak@g.com";
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("message/rfc822");
+                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{emailAddress});
+                i.putExtra(Intent.EXTRA_SUBJECT, "");
+                i.putExtra(Intent.EXTRA_TEXT   , "");
+                try {
+                    startActivity(Intent.createChooser(i, "Send mail..."));
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(DisplayContacts.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                }
+
+                Log.d("A", "Email Sending" + emailAddress);
+
+            }
+        });
+
+        textViewPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phone = "7049070159";
+                Intent i = new Intent(Intent.ACTION_CALL,Uri.parse("tel:"+phone));
+                startActivity(i);
+
+            }
+        });
     }
 
     @Override

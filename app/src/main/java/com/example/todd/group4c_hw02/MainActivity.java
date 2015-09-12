@@ -16,6 +16,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button buttonCreateContact;
+    Button buttonEditContact;
+    Button buttonDisplayContact;
+    Button buttonDeleteContact;
+    Button buttonFinish;
+
+    //Pass Result Codes
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,18 +35,56 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle(R.string.edit_contacts);
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
+        //Button Intializations
+        buttonCreateContact = (Button) findViewById(R.id.buttonCreateContact);
+        buttonDeleteContact = (Button) findViewById(R.id.buttonDeleteContact);
+        buttonEditContact = (Button) findViewById(R.id.buttonEditContact);
+        buttonDisplayContact = (Button) findViewById(R.id.buttonDisplayContact);
+        buttonFinish = (Button) findViewById(R.id.buttonFinish);
 
-        Button buttonContact = (Button) findViewById(R.id.buttonCreateContact);
-        buttonContact.setOnClickListener(new View.OnClickListener() {
+        buttonCreateContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, CreateContact.class);
-
                 startActivity(i);
 
             }
         });
 
+
+        buttonDisplayContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, DisplayContacts.class);
+                startActivity(i);
+
+            }
+        });
+
+        buttonEditContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, EditContact.class);
+                startActivity(i);
+
+            }
+        });
+
+        buttonDeleteContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, DeleteContact.class);
+                startActivity(i);
+
+            }
+        });
+
+        buttonFinish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
 
